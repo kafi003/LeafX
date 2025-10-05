@@ -2,5 +2,21 @@
   "name": "leafx",
   "version": "1.0.0",
   "private": true,
+<<<<<<< HEAD
   "dependencies": {}
 }
+=======
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "start": "cd frontend && npm start",
+    "start:backend": "cd backend && npm start",
+    "start:all": "concurrently \"npm run start:backend\" \"npm start\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+>>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)

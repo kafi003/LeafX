@@ -1,0 +1,10 @@
+✅ MongoDB connected successfully
+🚀 Server running on port 5002
+📍 API root: http://localhost:5002
+✅ MongoDB connected successfully
+2025-10-05T10:32:56.448Z - GET /
+2025-10-05T10:32:56.473Z - POST /api/users
+2025-10-05T10:32:56.532Z - GET /api/users
+2025-10-05T10:32:56.585Z - PATCH /api/users/68e2495840acc48b8b2e8f0a
+2025-10-05T10:32:56.637Z - GET /api/users/68e2495840acc48b8b2e8f0a
+2025-10-05T10:32:56.707Z - DELETE /api/users/68e2495840acc48b8b2e8f0a

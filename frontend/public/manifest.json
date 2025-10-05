@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "short_name": "React App",
   "name": "Create React App Sample",
+=======
+  "short_name": "LeafX",
+  "name": "LeafX - Build Fast, Ship Faster",
+>>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
   "icons": [
     {
       "src": "favicon.ico",
@@ -22,4 +27,8 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)

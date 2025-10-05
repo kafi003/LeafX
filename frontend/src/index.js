@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Auth0Provider } from '@auth0/auth0-react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -37,4 +38,56 @@ if (domain && clientId) {
   );
 }
 
+=======
+import { Auth0Provider } from "@auth0/auth0-react";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+
+const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
+
+// Ensure we have the required configuration
+if (!domain || !clientId) {
+  console.error('Missing Auth0 configuration. Please check your .env file.');
+}
+
+console.log('Auth0 Configuration:', { 
+  domain, 
+  clientId, 
+  redirectUri: window.location.origin,
+  currentUrl: window.location.href 
+});
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <Auth0Provider
+      domain={domain}
+      clientId={clientId}
+      authorizationParams={{
+        redirect_uri: 'http://localhost:3003',
+        scope: 'openid profile email'
+      }}
+      cacheLocation="localstorage"
+      onRedirectCallback={(appState) => {
+        console.log('Auth0 Redirect Callback:', { appState, currentUrl: window.location.href });
+        window.history.replaceState(
+          {},
+          document.title,
+          appState?.returnTo || window.location.pathname
+        );
+      }}
+      onError={(error) => {
+        console.error('Auth0 Error:', error); // Debug log
+      }}
+    >
+      <App />
+    </Auth0Provider>
+  </React.StrictMode>
+);
+
+>>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
 reportWebVitals();
