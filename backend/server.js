@@ -1,6 +1,6 @@
 // server.js (ESM)
-import express from "express";
 import cors from "cors";
+import express from "express";
 
 const app = express();
 const PORT = process.env.PORT || 5001; // use 5001 to avoid macOS system service on 5000
