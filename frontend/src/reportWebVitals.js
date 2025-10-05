@@ -10,4 +10,8 @@ const reportWebVitals = onPerfEntry => {
   }
 };
 
+<<<<<<< HEAD
 export default reportWebVitals;
+=======
+export default reportWebVitals;
+>>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
