@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-<<<<<<< HEAD
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -38,10 +37,7 @@
   }
 }
 
-/* New polished login card styles */
-=======
 /* Login page styles */
->>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
 .login-viewport {
   min-height: 100vh;
   display: flex;
@@ -51,10 +47,6 @@
   color: #e6eef8;
   padding: 48px 16px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
 .login-card {
   width: 980px;
   max-width: 95%;
@@ -65,12 +57,6 @@
   display: grid;
   grid-template-columns: 420px 1fr;
   overflow: hidden;
-<<<<<<< HEAD
-}
-
-.login-card { position: relative; }
-.bg-blobs { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
-=======
   position: relative;
 }
 
@@ -81,19 +67,12 @@
   z-index: 0;
 }
 
->>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
 .blob {
   position: absolute;
   border-radius: 50%;
   filter: blur(60px) saturate(120%);
   opacity: 0.9;
-<<<<<<< HEAD
   transform: translate3d(0,0,0);
-}
-.b1 { width: 520px; height: 520px; left: -160px; top: -120px; background: radial-gradient(circle at 30% 30%, rgba(255,99,132,0.95), rgba(255,159,102,0.6) 40%, transparent 65%); animation: float1 18s ease-in-out infinite; }
-.b2 { width: 420px; height: 420px; right: -120px; top: -80px; background: radial-gradient(circle at 70% 30%, rgba(99,102,241,0.95), rgba(34,211,238,0.6) 40%, transparent 65%); animation: float2 20s ease-in-out infinite; }
-.b3 { width: 360px; height: 360px; left: 30%; bottom: -120px; background: radial-gradient(circle at 50% 50%, rgba(168,85,247,0.9), rgba(96,165,250,0.5) 40%, transparent 70%); animation: float3 16s ease-in-out infinite; }
-=======
 }
 
 .b1 {
@@ -122,26 +101,6 @@
   background: radial-gradient(circle at 50% 50%, rgba(168,85,247,0.9), rgba(96,165,250,0.5) 40%, transparent 70%);
   animation: float3 16s ease-in-out infinite;
 }
->>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
-
-@keyframes float1 { 0%{ transform: translateY(0) rotate(0deg);} 50%{ transform: translateY(28px) rotate(18deg);} 100%{ transform: translateY(0) rotate(0deg);} }
-@keyframes float2 { 0%{ transform: translateY(0) rotate(0deg);} 50%{ transform: translateY(-30px) rotate(-12deg);} 100%{ transform: translateY(0) rotate(0deg);} }
-@keyframes float3 { 0%{ transform: translateY(0) rotate(0deg);} 50%{ transform: translateY(22px) rotate(8deg);} 100%{ transform: translateY(0) rotate(0deg);} }
-
-<<<<<<< HEAD
-.brand-logo { box-shadow: 0 10px 30px rgba(11,71,130,0.28); background: linear-gradient(135deg,#7dd3fc,#60a5fa); }
-.brand-logo { transition: transform .3s ease, box-shadow .3s ease; }
-.brand-logo:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 18px 50px rgba(11,71,130,0.36); }
-
-.cta-btn { display: inline-flex; align-items: center; gap: 10px; }
-.cta-btn svg { width: 18px; height: 18px; transform: translateX(0); transition: transform .18s ease; }
-.cta-btn:hover svg { transform: translateX(6px); }
-
-.left-title { font-size: 24px; letter-spacing: -0.2px; }
-.left-sub { font-size: 15px; }
-.feature-item { color: rgba(255,255,255,0.92); }
-=======
->>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
 .login-left {
   padding: 36px;
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
@@ -150,19 +109,15 @@
   gap: 18px;
   align-items: flex-start;
   justify-content: center;
-<<<<<<< HEAD
-}
-=======
   position: relative;
   z-index: 1;
 }
 
->>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
 .brand-logo {
-  width: 92px;
-  height: 92px;
-  background: linear-gradient(135deg,#7dd3fc,#60a5fa);
-  border-radius: 20px;
+  width: 84px;
+  height: 84px;
+  background: white;
+  border-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,29 +125,10 @@
   color: #03263b;
   font-size: 28px;
   box-shadow: 0 6px 18px rgba(11,71,130,0.25);
-<<<<<<< HEAD
 }
+
 .left-title {
   font-size: 22px;
-  font-weight: 700;
-  color: #f8fafc;
-}
-.left-sub {
-  color: #cfe8ff;
-  font-size: 14px;
-  line-height: 1.4;
-}
-=======
-  transition: transform .3s ease, box-shadow .3s ease;
-}
-
-.brand-logo:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 18px 50px rgba(11,71,130,0.36);
-}
-
-.left-title {
-  font-size: 24px;
   font-weight: 700;
   color: #f8fafc;
   letter-spacing: -0.2px;
@@ -203,39 +139,26 @@
   color: #cfe8ff;
   line-height: 1.4;
 }
-
->>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
 .feature-list {
   margin-top: 8px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
 .feature-item {
   display: flex;
   gap: 10px;
   align-items: center;
-<<<<<<< HEAD
-}
-=======
   color: rgba(255,255,255,0.92);
 }
 
->>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
 .feature-dot {
   width: 10px;
   height: 10px;
   background: #34d399;
   border-radius: 50%;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
 .login-right {
   padding: 36px 40px;
   display: flex;
@@ -243,37 +166,26 @@
   gap: 18px;
   align-items: stretch;
   justify-content: center;
-<<<<<<< HEAD
-}
-=======
   position: relative;
   z-index: 1;
 }
 
->>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
 .signin-title {
   font-size: 20px;
   font-weight: 700;
   color: #e6f0ff;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
 .signin-sub {
   color: #b9d7ff;
   font-size: 13px;
 }
-<<<<<<< HEAD
-=======
 
 .cta-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
->>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
 .cta-btn {
   margin-top: 18px;
   background: linear-gradient(90deg,#06b6d4,#3b82f6);
@@ -288,23 +200,14 @@
   box-shadow: 0 14px 32px rgba(59,130,246,0.24);
   transition: transform .14s cubic-bezier(.2,.9,.2,1), box-shadow .14s ease;
 }
-<<<<<<< HEAD
-.cta-btn:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 22px 48px rgba(59,130,246,0.34); }
-.secondary { background: transparent; border: 1px solid rgba(255,255,255,0.06); color: #dbeafe; }
-.small-note { color: #9fb7d8; font-size: 12px; }
-
-@media (max-width: 820px) {
-  .login-card { grid-template-columns: 1fr; }
-  .login-left { align-items: center; text-align: center; }
-}
-
-.cta-wrap { display: flex; justify-content: center; align-items: center; }
-=======
 
 .cta-btn:hover {
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 22px 48px rgba(59,130,246,0.34);
 }
+
+.secondary { background: transparent; border: 1px solid rgba(255,255,255,0.06); color: #dbeafe; }
+.small-note { color: #9fb7d8; font-size: 12px; }
 
 /* Dashboard styles */
 .app {
@@ -336,6 +239,7 @@
   font-weight: bold;
   background: linear-gradient(135deg,#7dd3fc,#60a5fa);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -938,4 +842,4 @@
     border-radius: 0;
   }
 }
->>>>>>> 75797b4 (Enhanced MongoDB Integration and API Testing)
+
