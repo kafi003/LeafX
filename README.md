@@ -90,6 +90,37 @@
    - Frontend: http://localhost:3000
    - Backend API: http://localhost:5001
 
+## 🌐 **Live Deployment**
+
+### **🚀 Deploy to www.LeafXAI.com**
+
+**One-Click Deployment:**
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/kafi003/LeafX)
+
+**Manual Deployment Steps:**
+1. **Vercel Deployment**:
+   ```bash
+   npm i -g vercel
+   vercel --prod
+   ```
+
+2. **Environment Variables** (Add in Vercel Dashboard):
+   ```env
+   ELEVEN_API_KEY=your_elevenlabs_api_key
+   GEMINI_API_KEY=your_gemini_api_key
+   PORT=5001
+   ```
+
+3. **Custom Domain Setup**:
+   - Purchase `LeafXAI.com` from any domain registrar
+   - Add domain in Vercel project settings
+   - Update DNS records as provided by Vercel
+   - SSL certificate auto-generated
+
+**Live URLs:**
+- 🌍 **Production**: `https://www.LeafXAI.com` (coming soon)
+- 🚧 **Staging**: `https://leafx-kafi003.vercel.app`
+
 ## 🏗️ Architecture
 
 ```
