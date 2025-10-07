@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeafX - Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        h1 { font-size: 3em; margin-bottom: 20px; }
+        .status { color: #4ade80; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌿 LeafX</h1>
+        <h2>GitHub Pages Test</h2>
+        <p class="status">✅ SUCCESS: GitHub Pages is working!</p>
+        <p>If you're seeing this, GitHub Pages is properly configured.</p>
+        <p><strong>Next:</strong> The React app should load here.</p>
+        <p><a href="https://github.com/kafi003/LeafX" style="color: #4ade80;">View Repository</a></p>
+        
+        <div style="margin-top: 30px; padding: 20px; background: rgba(0,0,0,0.2); border-radius: 10px;">
+            <h3>Expected Features:</h3>
+            <ul style="text-align: left; display: inline-block;">
+                <li>🔐 Premium Authentication</li>
+                <li>🎤 Voice Chat Interface</li>
+                <li>🌱 Supply Chain Optimizer</li>
+                <li>🛍️ Eco-Friendly Marketplace</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        console.log('🌿 LeafX GitHub Pages Test - Page Loaded Successfully');
+        
+        // Auto-redirect to React app after showing this test page
+        setTimeout(() => {
+            console.log('Attempting to load React app...');
+            window.location.reload();
+        }, 5000);
+    </script>
+</body>
+</html>
