@@ -5,22 +5,15 @@ import './Navbar.css';
 function Navbar({ user, onLogout }) {
   const location = useLocation();
 
-  // Public routes (always visible)
-  const publicNavItems = [
-    { path: '/', label: 'Home' }
-  ];
-
-  // Protected routes (only visible when authenticated)
-  const protectedNavItems = [
+  // All routes are now publicly visible
+  const navItems = [
+    { path: '/', label: 'Home' },
     { path: '/marketplace', label: 'Marketplace' },
     { path: '/advising', label: 'Advising' },
     { path: '/supply-chain', label: 'Supply Chain' },
     { path: '/chatbot', label: 'AI Chat' },
     { path: '/voice-chat', label: 'Voice Chat' }
   ];
-
-  // Show all nav items if user is logged in, otherwise only public items
-  const navItems = user ? [...publicNavItems, ...protectedNavItems] : publicNavItems;
 
   return (
     <nav className="nav">
