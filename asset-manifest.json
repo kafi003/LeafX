@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/LeafX/static/css/main.c63c4819.css",
+    "main.js": "/LeafX/static/js/main.df7bb2ef.js",
+    "static/js/453.d7446e4a.chunk.js": "/LeafX/static/js/453.d7446e4a.chunk.js",
+    "index.html": "/LeafX/index.html",
+    "main.c63c4819.css.map": "/LeafX/static/css/main.c63c4819.css.map",
+    "main.df7bb2ef.js.map": "/LeafX/static/js/main.df7bb2ef.js.map",
+    "453.d7446e4a.chunk.js.map": "/LeafX/static/js/453.d7446e4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c63c4819.css",
+    "static/js/main.df7bb2ef.js"
+  ]
+}
