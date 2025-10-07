@@ -1,14 +1,17 @@
-name: Deploy LeafX to GitHub Pages
+name: Deploy LeafX React App to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
     branches: [ main ]
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     
     steps:
     - name: Checkout 🛎️
@@ -24,7 +27,7 @@ jobs:
     - name: Install Dependencies 📦
       run: |
         cd frontend
-        npm ci
+        npm ci --only=production
 
     - name: Build React App 🏗️
       run: |
@@ -33,11 +36,16 @@ jobs:
       env:
         CI: false
         PUBLIC_URL: /LeafX
+        GENERATE_SOURCEMAP: false
+
+    - name: Setup Pages �
+      uses: actions/configure-pages@v3
+
+    - name: Upload artifact 📤
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: ./frontend/build
 
     - name: Deploy to GitHub Pages 🚀
-      uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main'
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./frontend/build
-        cname: kafi003.github.io
+      id: deployment
+      uses: actions/deploy-pages@v2

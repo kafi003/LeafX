@@ -67,7 +67,23 @@ export default function FreeTierVoiceChat() {
     setIsProcessing(true);
     
     try {
-      // Get AI response
+      // Check if we're in GitHub Pages demo mode
+      if (process.env.PUBLIC_URL === '/LeafX') {
+        // Demo mode - simulate AI response
+        const demoResponses = [
+          "Hello! I'm your environmental AI assistant. This is a demo of the LeafX platform interface. For full functionality including voice synthesis and real AI responses, please see the deployment instructions in our GitHub repository.",
+          "Welcome to LeafX Environmental AI! You're viewing the demo version. The complete application includes advanced ElevenLabs voice synthesis, real-time AI conversations, and supply chain optimization features.",
+          "This demonstrates the LeafX platform's premium interface. For the full experience with backend API integration, voice AI, and environmental analysis, please visit our GitHub repository for deployment instructions."
+        ];
+        
+        const randomResponse = demoResponses[Math.floor(Math.random() * demoResponses.length)];
+        setAiResponse(randomResponse);
+        await playWithBrowserTTS(randomResponse);
+        setIsProcessing(false);
+        return;
+      }
+      
+      // Full functionality for non-demo deployments
       const chatResponse = await fetch('/api/chat', {
         method: 'POST',
         headers: {
