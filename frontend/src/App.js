@@ -1,16 +1,16 @@
-﻿import React, { useState, useEffect } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Chatbot from './components/Chatbot';
-import Marketplace from './components/Marketplace';
-import Advising from './components/Advising';
-import FreeTierVoiceChat from './components/FreeTierVoiceChat';
-import SupplyChainOptimizer from './components/SupplyChainOptimizer';
-import AuthPage from './components/AuthPage';
+﻿import { useEffect, useState } from 'react';
+import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
-import './components/styles.css';
+import Advising from './components/Advising';
+import AuthPage from './components/AuthPage';
+import Chatbot from './components/Chatbot';
+import FreeTierVoiceChat from './components/FreeTierVoiceChat';
+import Home from './components/Home';
 import './components/Layout.css';
+import Marketplace from './components/Marketplace';
+import Navbar from './components/Navbar';
+import './components/styles.css';
+import SupplyChainOptimizer from './components/SupplyChainOptimizer';
 
 function App() {
     const [user, setUser] = useState(null);

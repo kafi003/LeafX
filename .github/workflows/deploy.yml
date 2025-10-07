@@ -27,7 +27,7 @@ jobs:
     - name: Install Dependencies 📦
       run: |
         cd frontend
-        npm ci --only=production
+        npm ci
 
     - name: Build React App 🏗️
       run: |
