@@ -53,71 +53,11 @@ function App() {
                             />
                         }
                     />
-                    <Route
-                        path='/chatbot'
-                        element={
-                            user ? (
-                                <Chatbot user={user} />
-                            ) : (
-                                <AuthPage
-                                    onLogin={handleLogin}
-                                    redirectPath='/chatbot'
-                                />
-                            )
-                        }
-                    />
-                    <Route
-                        path='/marketplace'
-                        element={
-                            user ? (
-                                <Marketplace user={user} />
-                            ) : (
-                                <AuthPage
-                                    onLogin={handleLogin}
-                                    redirectPath='/marketplace'
-                                />
-                            )
-                        }
-                    />
-                    <Route
-                        path='/advising'
-                        element={
-                            user ? (
-                                <Advising user={user} />
-                            ) : (
-                                <AuthPage
-                                    onLogin={handleLogin}
-                                    redirectPath='/advising'
-                                />
-                            )
-                        }
-                    />
-                    <Route
-                        path='/voice-chat'
-                        element={
-                            user ? (
-                                <FreeTierVoiceChat user={user} />
-                            ) : (
-                                <AuthPage
-                                    onLogin={handleLogin}
-                                    redirectPath='/voice-chat'
-                                />
-                            )
-                        }
-                    />
-                    <Route
-                        path='/supply-chain'
-                        element={
-                            user ? (
-                                <SupplyChainOptimizer user={user} />
-                            ) : (
-                                <AuthPage
-                                    onLogin={handleLogin}
-                                    redirectPath='/supply-chain'
-                                />
-                            )
-                        }
-                    />
+                    <Route path='/chatbot' element={<Chatbot user={user} />} />
+                    <Route path='/marketplace' element={<Marketplace user={user} />} />
+                    <Route path='/advising' element={<Advising user={user} />} />
+                    <Route path='/voice-chat' element={<FreeTierVoiceChat user={user} />} />
+                    <Route path='/supply-chain' element={<SupplyChainOptimizer user={user} />} />
                 </Routes>
             </div>
         </Router>
